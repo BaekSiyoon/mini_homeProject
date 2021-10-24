@@ -320,7 +320,7 @@ position: absolute;
 }
 .container::after{
     content: "";
-    background: url(../image/971.1jpg.jpg);
+    background: url(../img/971.1jpg.jpg);
     background-size: cover;
     opacity: 0.5;
     position: absolute;
