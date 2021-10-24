@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/29546d6ff0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Karma:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js" defer></script>
+
+    <title>login</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="main_logo">
+            <i class="fas fa-house-user"></i>
+            <a href="index.html">My Home</a>
+        </div>
+        <ul class="main_menu">
+            <li><a href="my.html">my</a></li>
+            <li><a href="puppy.html">puppy</a></li>
+            <li><a href="developer.html">developer</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+        <a href="#" class="main_Btn"><i class="fas fa-bars"></i></a>
+    </nav>
+
+    <!-- 회원가입페이지 -->
+    <section>
+        <div class="login_home">
+            <h2 class="login_title"> 회원가입</h2>
+        </div>
+        <article>
+            <form action="javascript:success();" method="POST" name="memberFrm">
+                <fieldset class="login_fieldset">
+                    <div class="user">
+                        <label for="userId">아이디</label>
+                        <div class="input_Box">
+                            <input type="text" id="userId" name="userId" placeholder="아이디를 입력하세요.">
+                            <span class="error error-userId"> * 아이디는 5~10자의 영문자,숫자만 가능합니다.</span>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <label for="userPw">비밀번호</label>
+                        <div class="input_Box">
+                            <input type="password" id="userPw" name="userPw" placeholder="비밀번호를 입력하세요.">
+                            <span class="error error-userPw"> * 비밀번호는 4~12자의 영문자,숫자,특수문자 @$!만 가능합니다.</span>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <label for="pwdCheck">비밀번호확인</label>
+                        <div class="input_Box">
+                            <input type="password" id="pwdCheck">
+                            <span class="error error-pwdCheck"> * 비밀번호가 일치하지 않습니다.</span>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <label for="userName">이름</label>
+                        <div class="input_Box">
+                            <input type="text" id="userName" name="userName">
+                            <span class="error error-userName"> * 이름 형식이 올바르지 않습니다.</span>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <label for="userEmail">이메일</label>
+                        <div class="input_Box">
+                            <input type="email" id="userEmail" name="userEmail">
+                            <span class="error error-userEmail"> * 이메일 형식이 올바르지 않습니다.</span>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <label for="userTel">전화번호</label>
+                        <div class="input_Box">
+                            <input type="text" name="userTel" id="userTel">
+                            <span class="error error-userTel"> * 전화번호 형식이 올바르지 않습니다.</span>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <label for="gender">성별</label>
+                        <div class="input_Box">
+                            <select name="gender" id="gender" style="font-size: 25px;">
+                                <option value="none">선택안함</option>
+                                <option value="남">남</option>
+                                <option value="여" selected>여</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="submit" value="가입하기" id="submit">
+                </fieldset>
+            </form>
+        </article>
+    </section>
+</body>
+
+</html>
